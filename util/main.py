@@ -9,5 +9,5 @@ def parse_file_to_lines(file_name: str):
     with open(file_name) as file:
         lines = []
         for line in file:
-            lines.append(line)
+            lines.append(line.strip())
         return lines
